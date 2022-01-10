@@ -7,18 +7,56 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,
             initial-scale=1, shrink-to-fit=no" />
-  
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href=
 "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity=
 "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous" />
-  
+
+    <!-- font awesome tag for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        
+  <link rel="stylesheet" href="style.css">
+  <script src="functions.js"></script>
+
     <title>
         Spacetagram
     </title>
 </head>
+
+<body>
+<header class="navbar bg-secondary text-primary">
+    <h1>
+        Spacetagram
+    </h1>
+</header>
+<div>
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img class="card-img" src="https://apod.nasa.gov/apod/image/2201/JupiterOpal_HubbleMasztalerz_960.jpg">
+                    <div class="card-body">
+                        <i class="bi bi-heart-fill"></i>
+                        <h5 class="card-title">  
+                            <button class=" like-review" onclick="LikeAnimation('title of the image');">
+                            <i class="fa fa-heart" id="title-of-the-image"></i> 
+                          </button> title of the image</h5>
+                        <p class="card-text">
+                            <script>LoadContent()</script></p>
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
 
 
 
