@@ -9,13 +9,17 @@ function LoadContent(){
         if (this.readyState == 4 && this.status == 200) {
             
             pictureObject = JSON.parse(this.responseText);
-            console.log(pictureObject.explanation);
+            $('p.card-text').html(pictureObject.explanation);
+            $('img.card-img').attr('src', pictureObject.url);
+            $('h5.card-title').html('<button class=" like-review" onclick="LikeAnimation(\'title of the image\');"><i class="fa fa-heart" id="title-of-the-image"></i> </button>' 
+            + pictureObject.title);
+            // $('i#title-of-the-image').attr('data-title', pictureObject.title);
         }
     };
         
-    xmlhttp.open("GET", "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY", true);
+    xmlhttp.open("GET", "https://api.nasa.gov/planetary/apod?api_key=E0ivgdohXIG7nAB0msyOhb5LpZEDQX6YYDWOGrIR", true);
     xmlhttp.send();
-    return pictureObject.explanation;
+    
 }
 
 
