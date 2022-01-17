@@ -42,7 +42,11 @@
   p {
     white-space: wrap;
     overflow:scroll;
-    height: 200px;
+    height: 20em;
+  }
+
+  img{
+    background-clip: content-box;
   }
 
   ::-webkit-scrollbar {
@@ -50,4 +54,8 @@
   }
   ::-webkit-scrollbar-thumb {
     background-color: #ccc;
+  }
+  .card{
+    box-shadow: 5px 5px 5px darkgray;
+    margin-top: .8em;
   }

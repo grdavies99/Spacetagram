@@ -18,8 +18,17 @@
     <!-- font awesome tag for icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         
+    <!-- jquery min import -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity=
+"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous">
+</script>
+
   <link rel="stylesheet" href="style.css">
-  <script src="functions.js"></script>
+  <script src="functions.js">
+      
+  </script>
 
     <title>
         Spacetagram
@@ -27,7 +36,7 @@
 </head>
 
 <body>
-<header class="navbar bg-secondary text-primary">
+<header class="navbar bg-secondary text-dark">
     <h1>
         Spacetagram
     </h1>
@@ -35,24 +44,10 @@
 <div>
     
     
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card">
-                    <img class="card-img" src="https://apod.nasa.gov/apod/image/2201/JupiterOpal_HubbleMasztalerz_960.jpg">
-                    <div class="card-body">
-                        <i class="bi bi-heart-fill"></i>
-                        <h5 class="card-title">  
-                            <button class=" like-review" onclick="LikeAnimation('title of the image');">
-                            <i class="fa fa-heart" id="title-of-the-image"></i> 
-                          </button> title of the image</h5>
-                        <p class="card-text">
-                            <script>LoadContent()</script></p>
-                         
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="container" id="container">
+        <script>LoadContent();
+        setInterval(LoadContent,5000);
+            </script>
     </div>
 </div>
 
@@ -60,12 +55,7 @@
 
 
 
-<!-- jquery min import -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity=
-"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous">
-    </script>
+
       
 <!-- Bootstrap min import -->
     <script src=
