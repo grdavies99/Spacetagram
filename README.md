@@ -1,5 +1,5 @@
 # Spacetagram
-My project submission for Shopify frontend SWE internship 2022
+My project A project made by Garrett Davies, using HTML/CSS, JavaScript and, JSON
 
 Directions for use:
 
